@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Tip_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xtB-vz-AxL">
+                                <rect key="frame" x="95" y="20" width="107" height="21"/>
+                                <color key="backgroundColor" red="0.078431372549019607" green="0.40784313725490196" blue="0.61176470588235299" alpha="1" colorSpace="calibratedRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Tip Calculator">
+                                        <attributes>
+                                            <color key="NSColor" red="0.99308893080000005" green="1" blue="0.99148587789999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="17" name="Baskerville"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact">
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                </variation>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="ve1-kn-OC1" userLabel="Super Stack View">
+                                <rect key="frame" x="52" y="48" width="222" height="319"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="vWW-qK-lV2" userLabel="Bill Amount Stack View">
+                                        <rect key="frame" x="21" y="94" width="117" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyT-1j-kKv">
+                                                <rect key="frame" x="20" y="29" width="92" height="21"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Bill Amount:">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="Baskerville"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="0.0" y="2" width="73" height="17"/>
+                                                </variation>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SIq-ry-4n1">
+                                                <rect key="frame" x="156" y="20" width="97" height="39"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="73" y="0.0" width="288" height="20"/>
+                                                </variation>
+                                            </textField>
+                                        </subviews>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="0.0" width="360" height="20"/>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A1T-ZP-M7W" userLabel="Tip % Stack View">
+                                        <rect key="frame" x="21" y="135" width="172" height="28"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Uc-Gg-N0V">
+                                                <rect key="frame" x="20" y="23" width="47" height="21"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Tip %:">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="Baskerville"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="17"/>
+                                                </variation>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="No5-LP-7VB">
+                                                <rect key="frame" x="156" y="20" width="125" height="29"/>
+                                                <segments>
+                                                    <segment title="15%"/>
+                                                    <segment title="18%"/>
+                                                    <segment title="20%"/>
+                                                </segments>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="40" y="0.0" width="125" height="18"/>
+                                                </variation>
+                                            </segmentedControl>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="No5-LP-7VB" secondAttribute="trailing" id="G1j-gH-e1K"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="G1j-gH-e1K"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="35" width="165" height="17"/>
+                                            <mask key="constraints">
+                                                <include reference="G1j-gH-e1K"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ElC-Jx-5h6" userLabel="Tip Amount Stack View">
+                                        <rect key="frame" x="20" y="176" width="119" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGy-Cv-jK6">
+                                                <rect key="frame" x="20" y="30" width="94" height="21"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Tip Amount:">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="Baskerville"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="75" height="16"/>
+                                                </variation>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="249" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YV4-D3-tzb">
+                                                <rect key="frame" x="157" y="20" width="97" height="31"/>
+                                                <color key="backgroundColor" red="0.99308893077038207" green="1" blue="0.99148587793966925" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <variation key="widthClass=compact" misplaced="YES">
+                                                    <rect key="frame" x="75" y="0.0" width="286" height="16"/>
+                                                </variation>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d6h-Fm-iUJ" userLabel="Total Stack View">
+                                        <rect key="frame" x="21" y="217" width="140" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIQ-VT-ZbH">
+                                                <rect key="frame" x="20" y="24" width="43" height="21"/>
+                                                <attributedString key="attributedText">
+                                                    <fragment content="Total:">
+                                                        <attributes>
+                                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <font key="NSFont" size="14" name="Baskerville"/>
+                                                        </attributes>
+                                                    </fragment>
+                                                </attributedString>
+                                                <nil key="highlightedColor"/>
+                                                <variation key="widthClass=compact">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                </variation>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bqX-y5-mJS">
+                                                <rect key="frame" x="156" y="20" width="97" height="30"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="97" id="Cmq-dP-jgb"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="bqX-y5-mJS" secondAttribute="trailing" id="lv6-XP-YpW"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="lv6-XP-YpW"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="lv6-XP-YpW"/>
+                                            </mask>
+                                        </variation>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NmG-q1-fok">
+                                        <rect key="frame" x="116" y="269" width="64" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="pkh-kL-GI7"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <state key="normal">
+                                            <attributedString key="attributedTitle">
+                                                <fragment content="Calculate">
+                                                    <attributes>
+                                                        <font key="NSFont" size="14" name="Baskerville"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                        </state>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="pkh-kL-GI7"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="pkh-kL-GI7"/>
+                                            </mask>
+                                        </variation>
+                                        <connections>
+                                            <action selector="calculateTip:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CGy-PZ-aqj"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="YtN-3s-hdb">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="YtN-3s-hdb" secondAttribute="height" multiplier="4:5" id="uRV-sW-KuD"/>
+                                        </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="uRV-sW-KuD"/>
+                                            </mask>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <mask key="constraints">
+                                                <include reference="uRV-sW-KuD"/>
+                                            </mask>
+                                        </variation>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="d6h-Fm-iUJ" firstAttribute="leading" secondItem="ve1-kn-OC1" secondAttribute="leading" id="8hX-0V-BXI"/>
+                                    <constraint firstAttribute="trailing" secondItem="YtN-3s-hdb" secondAttribute="trailing" constant="66" id="PSQ-TF-3fX"/>
+                                    <constraint firstAttribute="bottom" secondItem="ElC-Jx-5h6" secondAttribute="bottom" constant="468" id="Qos-yh-0L3"/>
+                                    <constraint firstAttribute="trailing" secondItem="vWW-qK-lV2" secondAttribute="trailing" id="RIU-jY-h1S"/>
+                                    <constraint firstAttribute="trailing" secondItem="ElC-Jx-5h6" secondAttribute="trailing" id="dqL-GT-cCl"/>
+                                    <constraint firstItem="A1T-ZP-M7W" firstAttribute="leading" secondItem="ve1-kn-OC1" secondAttribute="leading" id="kH9-Ah-mhC"/>
+                                    <constraint firstItem="vWW-qK-lV2" firstAttribute="leading" secondItem="ve1-kn-OC1" secondAttribute="leading" id="lnY-Ex-4lc"/>
+                                    <constraint firstItem="ElC-Jx-5h6" firstAttribute="top" secondItem="ve1-kn-OC1" secondAttribute="top" constant="66" id="rVw-6o-zOf"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="d6h-Fm-iUJ" secondAttribute="trailing" id="vqh-lu-LX8"/>
+                                    <constraint firstItem="ElC-Jx-5h6" firstAttribute="leading" secondItem="ve1-kn-OC1" secondAttribute="leading" id="ySa-pe-QDq"/>
+                                    <constraint firstItem="NmG-q1-fok" firstAttribute="leading" secondItem="ve1-kn-OC1" secondAttribute="leading" id="yXS-fr-Qqk">
+                                        <variation key="widthClass=compact" constant="0.0"/>
+                                    </constraint>
+                                    <constraint firstItem="d6h-Fm-iUJ" firstAttribute="top" secondItem="ve1-kn-OC1" secondAttribute="top" constant="97" id="ze3-14-ObH"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="RIU-jY-h1S"/>
+                                        <exclude reference="lnY-Ex-4lc"/>
+                                        <exclude reference="kH9-Ah-mhC"/>
+                                        <exclude reference="Qos-yh-0L3"/>
+                                        <exclude reference="dqL-GT-cCl"/>
+                                        <exclude reference="rVw-6o-zOf"/>
+                                        <exclude reference="ySa-pe-QDq"/>
+                                        <exclude reference="8hX-0V-BXI"/>
+                                        <exclude reference="vqh-lu-LX8"/>
+                                        <exclude reference="ze3-14-ObH"/>
+                                        <exclude reference="yXS-fr-Qqk"/>
+                                        <exclude reference="PSQ-TF-3fX"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" alignment="top" axis="vertical">
+                                    <mask key="constraints">
+                                        <include reference="RIU-jY-h1S"/>
+                                        <include reference="lnY-Ex-4lc"/>
+                                        <include reference="kH9-Ah-mhC"/>
+                                        <include reference="Qos-yh-0L3"/>
+                                        <include reference="dqL-GT-cCl"/>
+                                        <include reference="rVw-6o-zOf"/>
+                                        <include reference="ySa-pe-QDq"/>
+                                        <include reference="8hX-0V-BXI"/>
+                                        <include reference="vqh-lu-LX8"/>
+                                        <include reference="ze3-14-ObH"/>
+                                        <include reference="yXS-fr-Qqk"/>
+                                        <include reference="PSQ-TF-3fX"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="xtB-vz-AxL" secondAttribute="trailing" id="0HE-kk-FUg"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ve1-kn-OC1" secondAttribute="trailing" id="KtR-9g-mzg"/>
+                            <constraint firstItem="ve1-kn-OC1" firstAttribute="top" secondItem="xtB-vz-AxL" secondAttribute="bottom" id="Mig-Bo-tJf"/>
+                            <constraint firstItem="xtB-vz-AxL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="OyC-OA-sW9"/>
+                            <constraint firstItem="ve1-kn-OC1" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="PqQ-0X-FTT"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="ve1-kn-OC1" secondAttribute="bottom" constant="10" id="kN6-pM-ENN"/>
+                            <constraint firstItem="xtB-vz-AxL" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="uYS-yb-od6"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="xtB-vz-AxL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="0HE-kk-FUg"/>
+                                <exclude reference="OyC-OA-sW9"/>
+                                <exclude reference="uYS-yb-od6"/>
+                                <exclude reference="KtR-9g-mzg"/>
+                                <exclude reference="Mig-Bo-tJf"/>
+                                <exclude reference="PqQ-0X-FTT"/>
+                                <exclude reference="kN6-pM-ENN"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="xtB-vz-AxL"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="0HE-kk-FUg"/>
+                                <include reference="OyC-OA-sW9"/>
+                                <include reference="uYS-yb-od6"/>
+                                <include reference="KtR-9g-mzg"/>
+                                <include reference="Mig-Bo-tJf"/>
+                                <include reference="PqQ-0X-FTT"/>
+                                <include reference="kN6-pM-ENN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="billAmountField" destination="SIq-ry-4n1" id="DTh-b0-MZT"/>
+                        <outlet property="tipAmountField" destination="YV4-D3-tzb" id="x0V-dS-KoP"/>
+                        <outlet property="tipSelectorField" destination="No5-LP-7VB" id="Ly0-zq-E3A"/>
+                        <outlet property="totalAmountField" destination="bqX-y5-mJS" id="SMG-7D-LU1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="101" y="173"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="450" height="450"/>
+    </resources>
+</document>
